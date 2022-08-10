@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * nbr_spaces - return the number of string
  * using the number of space
@@ -11,7 +11,7 @@ unsigned int str_counter(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] = ' ')
+		if (str[i] == ' ')
 			cmpt++;
 	}
 	return (cmpt + 1);

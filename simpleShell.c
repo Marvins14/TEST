@@ -69,7 +69,7 @@ int main(int argc, char **argv)
 			_puts("cisfun#: ");
 		}
 
-		getline(&buffer, @bufsize, stdin);
+		getline(&buffer, &bufsize, stdin);
 		buffer[_strlen(buffer) - 1] = '\0';
 		tokens = string_to_tokens(buffer);
 		response = execute(tokens);
